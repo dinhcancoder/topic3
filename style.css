@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid rgb(255, 255, 255, .2);
+    padding: 15px;
+}
+
+.profile__main p {
+    position: relative;
+    font-size: 1.58rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.content {
+    margin-bottom: 150px;
+    border: 2px solid rgb(255, 255, 255, .2);
+    padding: 20px 25px;
+    border-radius: 8px;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 4.2rem;
+    margin: 20px 0 40px 0;
+}
+
+.content__text p {
+    font-size: 1.8rem;
+    letter-spacing: .2px;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(55, 55, 55);
+}
+
+.footer p {
+    text-align: center;
+    padding: 4px 0;
+}
+
+@media (max-width: 578px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+    }
+
+    .content__text p {
+        font-size: 1.72rem;
+    }
+
+    h1::before {
+        width: 370px;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .content__text p {
+        font-size: 1.62rem;
+    }
+
+    h1::before {
+        width: 300px;
+    }
+}
